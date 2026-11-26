@@ -1,1 +1,1 @@
-DEFAULT_TAX_RATE = 0.13  # Average Check
+DEFAULT_TAX_RATE = 0.13  # ROI
