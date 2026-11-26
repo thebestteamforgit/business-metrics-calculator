@@ -1,3 +1,5 @@
+<img src="welcome.png" width="500">
+
 # Business Metrics Calculator
 
 Приложение рассчитывает ключевые бизнес-метрики: ROI, конверсию воронки и средний чек (AOV)
