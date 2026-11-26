@@ -21,3 +21,15 @@ def test_average_check_negative_orders():
         match="Число заказов должно быть положительным"
     ):
         calculate_aov(12000, -5)
+
+
+def test_average_check_negative_revenue():
+    with pytest.raises(
+        ValueError,
+        match="Выручка не может быть отрицательной"
+    ):
+        calculate_aov(-12000, 40)
+
+
+def test_average_check_zero_revenue():
+    assert calculate_aov(0, 40) == pytest.approx(0.0)
