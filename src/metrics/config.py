@@ -1,1 +1,1 @@
-DEFAULT_TAX_RATE = 0.13
+DEFAULT_TAX_RATE = 0.13  # Average Check
