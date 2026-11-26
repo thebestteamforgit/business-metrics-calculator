@@ -44,11 +44,17 @@ def test_roi_negative_revenue():
     [
         ("1500", 1000),
         (1500, "1000"),
+        (None, 1000),
+        (1500, None),
+        (True, 1000),
+        (1500, True),
+        (False, 1000),
+        (1500, False),
     ],
 )
-def test_roi_non_numeric_input(revenue, costs):
+def test_roi_invalid_input_types(revenue, costs):
     with pytest.raises(
-        ValueError,
+        TypeError,
         match="Выручка и затраты должны быть числами"
     ):
         calculate_roi(revenue, costs)
